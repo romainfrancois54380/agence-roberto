@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
+<style>.reveal {opacity: 0; transform: translateY(20px); transition: all 0.6s ease;} .reveal.visible {opacity: 1; transform: translateY(0);}</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agence Roberto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --jaune: #ffe87c;
+      --noir: #111;
+      --blanc: #fff;
+      --gris: #f4f4f4;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--noir);
+      background: var(--blanc);
+      line-height: 1.6;
+    }
+
+    header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+      background: var(--jaune);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header img {
+      height: 100px;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background: var(--jaune);
+      color: var(--noir);
+      font-weight: bold;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--gris);
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .photo {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .photo img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      background: var(--gris);
+      padding: 2rem 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav style="position: fixed; top: 0; left: 0; width: 100%; background: #ffe87c; padding: 1rem; z-index: 1000; display: flex; gap: 2rem; justify-content: center; font-family: 'Inter', sans-serif; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+  <a href="#competences" style="text-decoration: none; color: #111; font-weight: bold;">Compétences</a>
+  <a href="#valeurs" style="text-decoration: none; color: #111; font-weight: bold;">Valeurs</a>
+  <a href="#romain" style="text-decoration: none; color: #111; font-weight: bold;">À propos</a>
+  <a href="#contact" style="text-decoration: none; color: #111; font-weight: bold;">Contact</a>
+</nav>
+
+<div style='padding-top: 5rem;'>
+
+  
+
+<header style="background: #fce87d; text-align: center; padding: 4rem 2rem;">
+  <img src="Logo_full.png" alt="Logo Agence Roberto" style="height: 100px; margin-bottom: 1.5rem;">
+  <div style="margin: 1rem 0; font-size: 2rem;"><em>Donner des ailes</em> 🕊️</div>
+  <hr style="border: none; border-top: 4px solid white; width: 100px; margin: 1.5rem auto;">
+  <div style="font-size: 1.4rem; font-family: 'Space Mono', monospace; text-transform: uppercase;">Agence de conseil en communication et en collecte de fonds</div>
+
+  
+</header>
+
+
+
+  <section style="background: #fff9ec; min-height: 100vh; display: flex; flex-direction: column; justify-content: center;">
+    <h2 id="competences" style="background: #ffe87c; display: inline-block; padding: 0.25rem 1rem; border-radius: 4px;" style="font-family: \'Space Mono\', monospace; text-transform: uppercase;" style="font-family: \'Space Mono\', monospace; text-transform: uppercase;" style="font-family: \'Space Mono\', monospace; text-transform: uppercase;">🧠 <span style="font-family:\'Space Mono\', monospace; text-transform: uppercase;">Compétences</span></h2>
+<hr style="width: 60px; border: none; border-top: 2px solid white; margin: 1rem auto;">
+    <div class="grid">
+      <div class="card">
+        <strong>🧠 Stratégie digitale</strong>
+        <p>Pour votre communication institutionnelle, événementielle, de mobilisation : réseaux sociaux, SEO, newsletters, etc.</p>
+      </div>
+      <div class="card">
+        <strong>💸 Collecte de fonds</strong>
+        <p>Pour assurer le développement et la pérennité de votre projet ou de votre structure.</p>
+      </div>
+      <div class="card">
+        <strong>🧩 Gestion de projets</strong>
+        <p>Pour accompagner vos équipes et vos prestataires dans la mise en œuvre concrète de vos campagnes.</p>
+      </div>
+    </div>
+  <hr style='margin: 3rem auto; width: 60%; border: 0; border-top: 1px solid #ccc;'>
+</section>
+
+  <section style="background: #fff9ec; min-height: 100vh; display: flex; flex-direction: column; justify-content: center;">
+    <h2 id="valeurs" style="background: #ffe87c; display: inline-block; padding: 0.25rem 1rem; border-radius: 4px;" style="font-family: \'Space Mono\', monospace; text-transform: uppercase;" style="font-family: \'Space Mono\', monospace; text-transform: uppercase;" style="font-family: \'Space Mono\', monospace; text-transform: uppercase;">🤝 Valeurs</h2>
+<hr style="width: 60px; border: none; border-top: 2px solid white; margin: 1rem auto;">
+    <ul>
+      <li><strong>🌈 Valorisation des différences</strong> : parce qu’on a besoin de chacun pour monter un édifice !</li>
+      <li><strong>🌀 Souplesse</strong> : parce que nous avons toutes et tous un agenda chargé, soyons réalistes pour gagner en impact !</li>
+      <li><strong>🤝 Respect du donateur</strong> : vos soutiens partagent avec vous vos ambitions, ils ne sont pas que des soutiens financiers !</li>
+    </ul>
+  <hr style='margin: 3rem auto; width: 60%; border: 0; border-top: 1px solid #ccc;'>
+</section>
+
+  
+<section class="photo reveal" style="background: #fff3c7; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 4rem 2rem;">
+  <h2 id="romain" style="font-family: 'Space Mono', monospace; font-size: 2rem; text-align: center;" style="font-family: \'Space Mono\', monospace; text-transform: uppercase;" style="font-family: \'Space Mono\', monospace; text-transform: uppercase;" style="font-family: \'Space Mono\', monospace; text-transform: uppercase;">👤 Qui je suis</h2>
+  <hr style="border: none; border-top: 4px solid white; width: 100px; margin: 1rem auto;">
+
+  <img src="portrait-romain.png" alt="Portrait de Romain" style="width: min(320px, 80vw); height: auto; border-radius: 50%; margin-bottom: 2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+
+  <p style="max-width: 800px; text-align: center; font-size: 1.3rem; line-height: 1.6;">
+    Moi c’est <strong>Romain</strong>, fondateur de l’agence. J’apporte mes <strong>15 ans d’expérience</strong> dans le marketing digital au sein de <strong>causes qui me tiennent à cœur</strong>.<br><br>
+    Pour moi, <strong>créer une différence</strong> grâce à mes compétences est moteur. En plus de cette activité avec l’Agence Roberto, je suis également <strong>salarié dans une grande ONG</strong> et <strong>président d’une association</strong>.
+  </p>
+
+  <hr style="border: none; border-top: 4px solid white; width: 100px; margin: 2rem auto 1rem;">
+</section>
+
+
+  <section class="reveal" style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center;">
+    <h2 id="contact" style="background: #ffe87c; display: inline-block; padding: 0.25rem 1rem; border-radius: 4px;" style="font-family: \'Space Mono\', monospace; text-transform: uppercase;" style="font-family: \'Space Mono\', monospace; text-transform: uppercase;" style="font-family: \'Space Mono\', monospace; text-transform: uppercase;">📬 <span style="font-family:\'Space Mono\', monospace; text-transform: uppercase;">Contact</span></h2>
+<hr style="width: 60px; border: none; border-top: 2px solid white; margin: 1rem auto;">
+    <p>Partagez votre projet avec moi et je reviendrai vers vous dans les meilleurs délais :</p>
+    <form class="contact-form" action="mailto:hello@agence-roberto.fr" method="POST" enctype="text/plain">
+      <input type="text" name="prenom" placeholder="Prénom" required>
+      <input type="text" name="nom" placeholder="Nom" required>
+      <input type="text" name="structure" placeholder="Nom de la structure" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Votre message" required></textarea>
+      <input type="text" name="budget" placeholder="Budget (optionnel)">
+      <button type="submit">Envoyer</button>
+    </form>
+  <hr style='margin: 3rem auto; width: 60%; border: 0; border-top: 1px solid #ccc;'>
+</section>
+
+  
+<footer style="background: #111; color: white; text-align: center; padding: 2rem 1rem; font-size: 0.9rem;">
+  <p>© 2025 Agence Roberto — SIRET : 80800183800024</p>
+  <details style="margin-top: 1rem;">
+    <summary style="cursor: pointer;">Mentions légales</summary>
+    <p style="margin-top: 1rem; font-size: 0.85rem;">
+      Directeur de publication : Romain François<br>
+      Hébergeur : à compléter selon l’hébergeur choisi<br>
+      Ce site ne collecte aucune donnée personnelle.
+    </p>
+  </details>
+</footer>
+
+</div>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(r => observer.observe(r));
+</script>
+</div>
+</body>
+</html>
